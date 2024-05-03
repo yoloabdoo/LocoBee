@@ -46,12 +46,23 @@ protocol NetworkClient {
             throw ClientError.invalidURL
         }
         
+        let request = request(url, method: method, headers: headers, body: body)
+        
         do {
-            let request = request(url, method: method, headers: headers, body: body)
             let (data, response) = try await session.data(for: request)
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse else {
                 throw ClientError.invalidResponse
             }
+
+            guard httpResponse.statusCode == 200 else {
+                if httpResponse.statusCode == 403 {
+                    await authManager.invalidateToken()
+                    return try await performRequest(endpoint, method: method, body: body)
+                } else {
+                    throw ClientError.invalidResponse
+                }
+            }
+            
             let decodedResponse = try jsonDecoder.decode(T.self, from: data)
             return decodedResponse
         } catch let error as DecodingError {

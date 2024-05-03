@@ -39,6 +39,10 @@ class AuthTokenManager {
         return currentToken
     }
     
+    func invalidateToken() {
+        currentToken.invalidateToken = true
+    }
+    
     private func authenticate() async throws -> Token {
         if let authTask = authTask {
             return try await authTask.value

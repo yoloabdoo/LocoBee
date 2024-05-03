@@ -4,11 +4,12 @@ struct Token: Decodable {
     let accessToken: String
     let expiresAt: Date
     let refreshToken: String
+    var invalidateToken = false
 }
 
 extension Token {
     var isValid: Bool {
-        Date() < expiresAt
+        !invalidateToken && Date() < expiresAt
     }
     
     var isAuthenticated: Bool {
