@@ -32,11 +32,9 @@ jobs:
         xcodebuild clean build \
           -scheme LocoBee \
           -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
-          -derivedDataPath build
 
     - name: Run Tests on iOS
       run: |
         xcodebuild test \
-          -scheme LocoBee \
+          -scheme LocoBeeTests \
           -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
-          -derivedDataPath build
