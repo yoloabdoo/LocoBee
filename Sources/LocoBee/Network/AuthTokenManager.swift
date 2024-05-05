@@ -1,5 +1,14 @@
 import Foundation
 
+
+/**
+ `AuthTokenManager` is responsible for managing authentication tokens.
+ 
+ - The class interacts with an `AuthenticationNetworkClient` to authenticate or refresh tokens as needed.
+ - It handles the following scenarios:
+ - Initial authentication
+ - Refreshing an expired or invalid token
+ - Invalidation of tokens. */
 @URLSessionAPIClient
 class AuthTokenManager {
     enum AuthError: Error {
@@ -8,22 +17,17 @@ class AuthTokenManager {
     }
     
     private let network: AuthenticationNetworkClient
-    private var currentToken: Token!
-    private var refreshTask: Task<Token, Error>?
-    private var authTask: Task<Token, Error>?
+    private var currentToken: TokenData
+    private var networkTask: Task<TokenData, Error>?
     
     init(_ network: AuthenticationNetworkClient, initialToken: Token) {
         self.network = network
-        self.currentToken = initialToken
+        self.currentToken = TokenData(token: initialToken)
     }
 
-    func validToken() async throws -> Token {
-        if let handle = refreshTask {
-            return try await handle.value
-        }
-        
-        if let authTask = authTask {
-            return try await authTask.value
+    func validToken() async throws -> TokenData {
+        if let task = networkTask {
+            return try await task.value
         }
 
         guard currentToken.isAuthenticated else {
@@ -43,27 +47,27 @@ class AuthTokenManager {
         currentToken.invalidateToken = true
     }
     
-    private func authenticate() async throws -> Token {
-        if let authTask = authTask {
+    private func authenticate() async throws -> TokenData {
+        if let authTask = networkTask {
             return try await authTask.value
         }
         
-        let task = Task { () throws -> Token in
-            defer { authTask = nil }
+        let task = Task { () throws -> TokenData in
+            defer { networkTask = nil }
             return try await network.authenticate(currentToken)
         }
         
-        authTask = task
+        networkTask = task
         return try await task.value
     }
 
-    private func refreshToken() async throws -> Token {
-        if let refreshTask = refreshTask {
+    private func refreshToken() async throws -> TokenData {
+        if let refreshTask = networkTask {
             return try await refreshTask.value
         }
         
-        let task = Task { () throws -> Token in
-            defer { refreshTask = nil }
+        let task = Task { () throws -> TokenData in
+            defer { networkTask = nil }
             guard !currentToken.refreshToken.isEmpty else {
                 throw AuthError.missingRefreshToken
             }
@@ -71,7 +75,7 @@ class AuthTokenManager {
             return try await network.refreshToken(currentToken)
         }
         
-        self.refreshTask = task
+        networkTask = task
         return try await task.value
     }
 }
