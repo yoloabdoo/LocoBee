@@ -13,7 +13,6 @@ import Foundation
 @URLSessionAPIClient
 class AuthTokenManager {
     enum AuthError: Error {
-        case missingToken
         case missingRefreshToken
     }
     
