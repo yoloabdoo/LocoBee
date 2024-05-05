@@ -7,18 +7,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
-concurrency:
-  group: ci
-  cancel-in-progress: true
-  
 jobs:
-  ios-latest:
-    name: Unit Tests (iOS 17.4, Xcode 15.3)
+  build:
+
     runs-on: macos-latest
-    env:
-      DEVELOPER_DIR: /Applications/Xcode.app/Contents/Developer
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Run Tests
-        run: |
-          Scripts/test.sh -s "LocoBeeTests" -d "OS=16.4,name=iPhone 14 Pro"
+    - uses: actions/checkout@v4
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
