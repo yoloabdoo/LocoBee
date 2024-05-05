@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930192042BE415C6003FA922 /* LocaBeeTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930192032BE415C6003FA922 /* LocaBeeTestAppApp.swift */; };
+		930192062BE415C6003FA922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930192052BE415C6003FA922 /* ContentView.swift */; };
+		930192082BE415C7003FA922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930192072BE415C7003FA922 /* Assets.xcassets */; };
+		9301920B2BE415C7003FA922 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9301920A2BE415C7003FA922 /* Preview Assets.xcassets */; };
+		930192152BE415C7003FA922 /* LocaBeeTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930192142BE415C7003FA922 /* LocaBeeTestAppTests.swift */; };
+		9301921F2BE415C7003FA922 /* LocaBeeTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301921E2BE415C7003FA922 /* LocaBeeTestAppUITests.swift */; };
+		930192212BE415C7003FA922 /* LocaBeeTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930192202BE415C7003FA922 /* LocaBeeTestAppUITestsLaunchTests.swift */; };
+		930192302BE4168A003FA922 /* LocoBee in Frameworks */ = {isa = PBXBuildFile; productRef = 9301922F2BE4168A003FA922 /* LocoBee */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		930192112BE415C7003FA922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930191F82BE415C6003FA922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930191FF2BE415C6003FA922;
+			remoteInfo = LocaBeeTestApp;
+		};
+		9301921B2BE415C7003FA922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930191F82BE415C6003FA922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930191FF2BE415C6003FA922;
+			remoteInfo = LocaBeeTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		930192002BE415C6003FA922 /* LocaBeeTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaBeeTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		930192032BE415C6003FA922 /* LocaBeeTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaBeeTestAppApp.swift; sourceTree = "<group>"; };
+		930192052BE415C6003FA922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		930192072BE415C7003FA922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9301920A2BE415C7003FA922 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		930192102BE415C7003FA922 /* LocaBeeTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocaBeeTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930192142BE415C7003FA922 /* LocaBeeTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaBeeTestAppTests.swift; sourceTree = "<group>"; };
+		9301921A2BE415C7003FA922 /* LocaBeeTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocaBeeTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9301921E2BE415C7003FA922 /* LocaBeeTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaBeeTestAppUITests.swift; sourceTree = "<group>"; };
+		930192202BE415C7003FA922 /* LocaBeeTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaBeeTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		930192312BE6BC57003FA922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9378D8CA2BE7E37600E2FB0A /* LocoBee */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocoBee; path = ..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		930191FD2BE415C6003FA922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930192302BE4168A003FA922 /* LocoBee in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9301920D2BE415C7003FA922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930192172BE415C7003FA922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		930191F72BE415C6003FA922 = {
+			isa = PBXGroup;
+			children = (
+				9378D8CA2BE7E37600E2FB0A /* LocoBee */,
+				930192022BE415C6003FA922 /* LocaBeeTestApp */,
+				930192132BE415C7003FA922 /* LocaBeeTestAppTests */,
+				9301921D2BE415C7003FA922 /* LocaBeeTestAppUITests */,
+				930192012BE415C6003FA922 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		930192012BE415C6003FA922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				930192002BE415C6003FA922 /* LocaBeeTestApp.app */,
+				930192102BE415C7003FA922 /* LocaBeeTestAppTests.xctest */,
+				9301921A2BE415C7003FA922 /* LocaBeeTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		930192022BE415C6003FA922 /* LocaBeeTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				930192312BE6BC57003FA922 /* Info.plist */,
+				930192032BE415C6003FA922 /* LocaBeeTestAppApp.swift */,
+				930192052BE415C6003FA922 /* ContentView.swift */,
+				930192072BE415C7003FA922 /* Assets.xcassets */,
+				930192092BE415C7003FA922 /* Preview Content */,
+			);
+			path = LocaBeeTestApp;
+			sourceTree = "<group>";
+		};
+		930192092BE415C7003FA922 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9301920A2BE415C7003FA922 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		930192132BE415C7003FA922 /* LocaBeeTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				930192142BE415C7003FA922 /* LocaBeeTestAppTests.swift */,
+			);
+			path = LocaBeeTestAppTests;
+			sourceTree = "<group>";
+		};
+		9301921D2BE415C7003FA922 /* LocaBeeTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9301921E2BE415C7003FA922 /* LocaBeeTestAppUITests.swift */,
+				930192202BE415C7003FA922 /* LocaBeeTestAppUITestsLaunchTests.swift */,
+			);
+			path = LocaBeeTestAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		930191FF2BE415C6003FA922 /* LocaBeeTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930192242BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestApp" */;
+			buildPhases = (
+				930191FC2BE415C6003FA922 /* Sources */,
+				930191FD2BE415C6003FA922 /* Frameworks */,
+				930191FE2BE415C6003FA922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocaBeeTestApp;
+			packageProductDependencies = (
+				9301922F2BE4168A003FA922 /* LocoBee */,
+			);
+			productName = LocaBeeTestApp;
+			productReference = 930192002BE415C6003FA922 /* LocaBeeTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9301920F2BE415C7003FA922 /* LocaBeeTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930192272BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestAppTests" */;
+			buildPhases = (
+				9301920C2BE415C7003FA922 /* Sources */,
+				9301920D2BE415C7003FA922 /* Frameworks */,
+				9301920E2BE415C7003FA922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930192122BE415C7003FA922 /* PBXTargetDependency */,
+			);
+			name = LocaBeeTestAppTests;
+			productName = LocaBeeTestAppTests;
+			productReference = 930192102BE415C7003FA922 /* LocaBeeTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		930192192BE415C7003FA922 /* LocaBeeTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9301922A2BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestAppUITests" */;
+			buildPhases = (
+				930192162BE415C7003FA922 /* Sources */,
+				930192172BE415C7003FA922 /* Frameworks */,
+				930192182BE415C7003FA922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9301921C2BE415C7003FA922 /* PBXTargetDependency */,
+			);
+			name = LocaBeeTestAppUITests;
+			productName = LocaBeeTestAppUITests;
+			productReference = 9301921A2BE415C7003FA922 /* LocaBeeTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		930191F82BE415C6003FA922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					930191FF2BE415C6003FA922 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9301920F2BE415C7003FA922 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 930191FF2BE415C6003FA922;
+					};
+					930192192BE415C7003FA922 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 930191FF2BE415C6003FA922;
+					};
+				};
+			};
+			buildConfigurationList = 930191FB2BE415C6003FA922 /* Build configuration list for PBXProject "LocaBeeTestApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 930191F72BE415C6003FA922;
+			packageReferences = (
+			);
+			productRefGroup = 930192012BE415C6003FA922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				930191FF2BE415C6003FA922 /* LocaBeeTestApp */,
+				9301920F2BE415C7003FA922 /* LocaBeeTestAppTests */,
+				930192192BE415C7003FA922 /* LocaBeeTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		930191FE2BE415C6003FA922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9301920B2BE415C7003FA922 /* Preview Assets.xcassets in Resources */,
+				930192082BE415C7003FA922 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9301920E2BE415C7003FA922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930192182BE415C7003FA922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		930191FC2BE415C6003FA922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930192062BE415C6003FA922 /* ContentView.swift in Sources */,
+				930192042BE415C6003FA922 /* LocaBeeTestAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9301920C2BE415C7003FA922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930192152BE415C7003FA922 /* LocaBeeTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930192162BE415C7003FA922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930192212BE415C7003FA922 /* LocaBeeTestAppUITestsLaunchTests.swift in Sources */,
+				9301921F2BE415C7003FA922 /* LocaBeeTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		930192122BE415C7003FA922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930191FF2BE415C6003FA922 /* LocaBeeTestApp */;
+			targetProxy = 930192112BE415C7003FA922 /* PBXContainerItemProxy */;
+		};
+		9301921C2BE415C7003FA922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930191FF2BE415C6003FA922 /* LocaBeeTestApp */;
+			targetProxy = 9301921B2BE415C7003FA922 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		930192222BE415C7003FA922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		930192232BE415C7003FA922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		930192252BE415C7003FA922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocaBeeTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocaBeeTestApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to track your location at all times for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need to track your location while using the app for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need to track your location while using the app for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to track your location at all times for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		930192262BE415C7003FA922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LocaBeeTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocaBeeTestApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to track your location at all times for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need to track your location while using the app for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need to track your location while using the app for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to track your location at all times for security purposes, such as ensuring your safety during emergencies.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		930192282BE415C7003FA922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocaBeeTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocaBeeTestApp";
+			};
+			name = Debug;
+		};
+		930192292BE415C7003FA922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocaBeeTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LocaBeeTestApp";
+			};
+			name = Release;
+		};
+		9301922B2BE415C7003FA922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocaBeeTestApp;
+			};
+			name = Debug;
+		};
+		9301922C2BE415C7003FA922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53X4P3UM4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoloabdo.LocaBeeTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocaBeeTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		930191FB2BE415C6003FA922 /* Build configuration list for PBXProject "LocaBeeTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930192222BE415C7003FA922 /* Debug */,
+				930192232BE415C7003FA922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930192242BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930192252BE415C7003FA922 /* Debug */,
+				930192262BE415C7003FA922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930192272BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930192282BE415C7003FA922 /* Debug */,
+				930192292BE415C7003FA922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9301922A2BE415C7003FA922 /* Build configuration list for PBXNativeTarget "LocaBeeTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9301922B2BE415C7003FA922 /* Debug */,
+				9301922C2BE415C7003FA922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9301922F2BE4168A003FA922 /* LocoBee */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocoBee;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 930191F82BE415C6003FA922 /* Project object */;
+}
