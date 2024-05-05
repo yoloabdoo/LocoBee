@@ -1,7 +1,5 @@
-# This workflow will build and test an iOS Swift package using xcodebuild.
-# For more information, see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Swift iOS
+# This workflow will build and test a Swift package for iOS using xcodebuild.
+name: Swift Package iOS
 
 on:
   push:
@@ -15,7 +13,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Check out the repository
+      uses: actions/checkout@v4
 
     - name: Set up Xcode Simulator
       run: |
@@ -23,17 +22,21 @@ jobs:
         sudo xcodebuild -runFirstLaunch
         xcodebuild -version
 
-    - name: Install iOS Simulators
+    - name: Install iOS Simulator
       run: |
-        xcrun simctl list devices
-        xcodebuild -downloadAllSimulators
+        sudo xcodebuild -downloadAllSimulators
         xcrun simctl create "iPhone 14" com.apple.CoreSimulator.SimDeviceType.iPhone-14 com.apple.CoreSimulator.SimRuntime.iOS-16-2
-        xcrun simctl list devices
 
-    - name: Build for iOS
+    - name: Build Package for iOS
       run: |
-        xcodebuild build -scheme LocoBee -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' -derivedDataPath build
+        xcodebuild clean build \
+          -scheme LocoBee \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
+          -derivedDataPath build
 
     - name: Run Tests on iOS
       run: |
-        xcodebuild test -scheme LocoBeeTests -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' -derivedDataPath build
+        xcodebuild test \
+          -scheme LocoBee \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
+          -derivedDataPath build
