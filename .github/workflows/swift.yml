@@ -13,12 +13,12 @@ concurrency:
   
 jobs:
   ios-latest:
-    name: Unit Tests (iOS 16.4, Xcode 14.3.1)
+    name: Unit Tests (iOS 17.4, Xcode 15.3)
     runs-on: macOS-13
     env:
-      DEVELOPER_DIR: /Applications/Xcode_14.3.1.app/Contents/Developer
+      DEVELOPER_DIR: /Applications/Xcode_15.3.app/Contents/Developer
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Run Tests
         run: |
           Scripts/test.sh -s "LocoBeeTests" -d "OS=16.4,name=iPhone 14 Pro"
