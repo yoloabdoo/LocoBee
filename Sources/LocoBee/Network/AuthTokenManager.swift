@@ -9,6 +9,7 @@ import Foundation
  - Initial authentication
  - Refreshing an expired or invalid token
  - Invalidation of tokens. */
+@available(macOS 10.15, iOS 13, *)
 @URLSessionAPIClient
 class AuthTokenManager {
     enum AuthError: Error {

@@ -23,6 +23,7 @@ import Foundation
  try await locationStore.add(location: newLocation)
  }
  **/
+@available(macOS 10.15, iOS 13, *)
 class LocationStore {
     private var items: [Date: Location]
     private let limit: Int

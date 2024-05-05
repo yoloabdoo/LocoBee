@@ -17,6 +17,7 @@ protocol NetworkClient {
     ) async throws -> T
 }
 
+@available(macOS 10.15, iOS 13, *)
 @globalActor actor URLSessionAPIClient: NetworkClient, AuthorisedNetworkClient {
     static let shared = URLSessionAPIClient()
     

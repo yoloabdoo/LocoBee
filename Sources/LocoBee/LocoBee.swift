@@ -32,7 +32,7 @@ import Foundation
  ```
  Note: Make sure to request proper location permissions in your app.
  */
-
+@available(macOS 10.15, iOS 13, *)
 public class LocoBee: ObservableObject {
     public static let shared = LocoBee()
     private let networkClient: URLSessionAPIClient
