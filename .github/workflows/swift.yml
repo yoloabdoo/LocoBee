@@ -7,34 +7,18 @@ on:
   pull_request:
     branches: [ "main" ]
 
+concurrency:
+  group: ci
+  cancel-in-progress: true
+  
 jobs:
-  build:
-
-    runs-on: macos-latest
-
+  ios-latest:
+    name: Unit Tests (iOS 16.4, Xcode 14.3.1)
+    runs-on: macOS-13
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_14.3.1.app/Contents/Developer
     steps:
-    - name: Check out the repository
-      uses: actions/checkout@v4
-
-    - name: Set up Xcode Simulator
-      run: |
-        sudo xcode-select -switch /Applications/Xcode.app
-        sudo xcodebuild -runFirstLaunch
-        xcodebuild -version
-
-    - name: Install iOS Simulator
-      run: |
-        sudo xcodebuild -downloadAllSimulators
-        xcrun simctl create "iPhone 14" com.apple.CoreSimulator.SimDeviceType.iPhone-14 com.apple.CoreSimulator.SimRuntime.iOS-16-2
-
-    - name: Build Package for iOS
-      run: |
-        xcodebuild clean build \
-          -scheme LocoBee \
-          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
-
-    - name: Run Tests on iOS
-      run: |
-        xcodebuild test \
-          -scheme LocoBeeTests \
-          -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
+      - uses: actions/checkout@v2
+      - name: Run Tests
+        run: |
+          Scripts/test.sh -s "LocoBeeTests" -d "OS=16.4,name=iPhone 14 Pro"
