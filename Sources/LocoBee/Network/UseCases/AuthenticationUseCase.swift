@@ -1,8 +1,8 @@
 import Foundation
 
 protocol AuthenticationNetworkClient {
-    func authenticate(_ token: Token) async throws -> Token
-    func refreshToken(_ token: Token) async throws -> Token
+    func authenticate(_ token: TokenData) async throws -> TokenData
+    func refreshToken(_ token: TokenData) async throws -> TokenData
 }
 
 struct AuthenticationUseCase: AuthenticationNetworkClient {
@@ -12,15 +12,15 @@ struct AuthenticationUseCase: AuthenticationNetworkClient {
         self.client = client
     }
     
-    func authenticate(_ token: Token) async throws -> Token {
+    func authenticate(_ token: TokenData) async throws -> TokenData {
         let headers = ["Authorization": token.bearerAccessToken]
-        return try await client.performRequest(.authenticate, method: .post, headers: headers, body: nil)
+        return TokenData(token: try await client.performRequest(.authenticate, method: .post, headers: headers, body: nil))
     }
     
-    func refreshToken(_ token: Token) async throws -> Token {
+    func refreshToken(_ token: TokenData) async throws -> TokenData {
         let headers = ["Authorization": token.bearerRefreshToken]
         let refresh: RefreshTokenData = try await client.performRequest(.refreshToken, method: .post, headers: headers, body: nil)
-        return .init(accessToken: refresh.accessToken, expiresAt: refresh.expiresAt, refreshToken: token.refreshToken)
+        return TokenData(token: Token(accessToken: refresh.accessToken, expiresAt: refresh.expiresAt, refreshToken: token.refreshToken))
     }
 }
 

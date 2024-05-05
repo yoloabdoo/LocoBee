@@ -1,6 +1,11 @@
 import Foundation
 
-struct LocationUseCase {
+protocol LocationNetworkClient {
+    @discardableResult
+    func update(_ location: Location) async throws -> MessageResponse
+}
+
+struct LocationUseCase: LocationNetworkClient {
     private let client: AuthorisedNetworkClient
     
     init(client: AuthorisedNetworkClient = URLSessionAPIClient.shared) {
@@ -15,5 +20,10 @@ struct LocationUseCase {
         } catch let error as EncodingError {
             throw UseCaseError.encodingError(error)
         }
+    }
+    
+    @discardableResult
+    func update(_ location: Location) async throws -> MessageResponse {
+        try await updateLocation(latitude: location.latitude, longitude: location.longitude)
     }
 }

@@ -33,7 +33,8 @@ protocol NetworkClient {
     
     func setup() async {
         configureJSONDecoder()
-        self.authManager = await .init(AuthenticationUseCase(), initialToken: .initial)
+        // initial token can be passed through setup func, or read via plist file. 
+        self.authManager = await AuthTokenManager(AuthenticationUseCase(), initialToken: .initial)
     }
     
     func performRequest<T: Decodable>(

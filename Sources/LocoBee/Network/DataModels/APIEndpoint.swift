@@ -18,3 +18,8 @@ enum APIEndpoint {
     
     static let baseURL = URL(string: "https://dummy-api-mobile.api.sandbox.bird.one/")!
 }
+
+enum RequestMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
