@@ -17,6 +17,34 @@
 1. Clone or download the repository.
 2. Drag the `LocoBee` folder into your Xcode project.
 
+### Add Location Info to `Info.plist`
+
+To request location permissions, add the following keys to your app's `Info.plist` file:
+
+1. **NSLocationWhenInUseUsageDescription**  
+   Used for requesting location access while the app is in the foreground.
+
+   ```xml
+   <key>NSLocationWhenInUseUsageDescription</key>
+   <string>We need your location for tracking purposes.</string>
+   ```
+
+2. **NSLocationAlwaysUsageDescription**  
+   Used for requesting location access even when the app is in the background.
+
+   ```xml
+   <key>NSLocationAlwaysUsageDescription</key>
+   <string>We need your location for background tracking purposes.</string>
+   ```
+
+3. **NSLocationAlwaysAndWhenInUseUsageDescription** (Optional)  
+   Covers both the above cases and simplifies location authorization management.
+
+   ```xml
+   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+   <string>We need your location for continuous tracking purposes.</string>
+   ```
+
 ## Usage
 ### Register the SDK
 Make sure to call the `register` method to set up the necessary network clients before starting location observation.
